@@ -15,7 +15,7 @@ CONTENT_FILE = "content.json"
 # Compute embeddings only if not saved
 if not os.path.exists(EMBEDDINGS_FILE):
     text_splitter = TokenTextSplitter(chunk_size=1024, chunk_overlap=0)
-    loader = PyPDFLoader("final_dataset_source.pdf")
+    loader = PyPDFLoader("final_dataset_source.pdf") # dataset source pdf
     raw_chunks = loader.load_and_split(text_splitter)
 
     torch.backends.cuda.enable_mem_efficient_sdp(False)
