@@ -19,6 +19,10 @@ Run ```prometheus_data.py``` first to obtain answers from the model you want to 
 
 ```f1pendant_scores.py``` scores the model using the PENDANT similarity index from qa-metrics (https://github.com/zli12321/qa_metrics). The script is also dependent on the file produced from ```prometheus_data.py```
 
+## flask
+
+Flask web application to interface the fine-tuned model (https://huggingface.co/vrpatel/power-converter) and `power_converter` GUI (https://github.com/vineshrpatel/power-converter-tool).
+
 ## Acknowledgement
 
 This work has used Durham University’s NCC cluster. NCC has been purchased through Durham University’s strategic investment funds, and is installed and maintained by the Department of Computer Science.
